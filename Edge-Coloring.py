@@ -27,7 +27,6 @@ def getSmallestColor(ls1,ls2):
         i = i + 1
     return i
 
-#iterate over edges
 i = 0
 for ed in edges:
     newColor = getSmallestColor(color_lists[ed[0]],color_lists[ed[1]])
@@ -36,7 +35,6 @@ for ed in edges:
     color_of_edge[i] = newColor
     i = i + 1
 
-# Makin graph again
 G = nx.Graph()
 
 for i in range(len(edges)):
@@ -44,5 +42,7 @@ for i in range(len(edges)):
 
 colors = nx.get_edge_attributes(G,'color').values()
 nx.draw(G, edge_color=colors, with_labels=True, width=2)
+
+//shows the graph
 
 plt.show()
