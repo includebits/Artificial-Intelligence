@@ -25,8 +25,8 @@ def dfs(visited, graph, node):
         visited.add(node) 
         for neighbour in graph[node]: 
             dfs(visited, graph, neighbour) 
-print("BFS:" , end =" ") 
+print("BFS will be:" , end =" ") 
 bfs(visited_bfs, graph, 'A') 
 print('\n') 
-print("DFS:" , end =" ") 
+print("DFS will be:" , end =" ") 
 dfs(visited, graph, 'A') 
