@@ -1,4 +1,3 @@
-#EDGE COLOR
 
 import matplotlib.pyplot as plt
 import networkx as nx
@@ -29,7 +28,6 @@ def getSmallestColor(ls1,ls2):
         i = i + 1
     return i
 
-#iterate over edges
 i = 0
 for ed in edges:
     newColor = getSmallestColor(color_lists[ed[0]],color_lists[ed[1]])
@@ -38,7 +36,6 @@ for ed in edges:
     color_of_edge[i] = newColor
     i = i + 1
 
-# Makin graph again
 G = nx.Graph()
 
 for i in range(len(edges)):
