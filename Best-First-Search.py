@@ -21,7 +21,7 @@ def addedge(x, y, cost):
     graph[y].append((x, cost)) 
 G = nx.Graph() 
 v = int(input("Enter the number of nodes: ")) 
-graph = [[] for i in range(v)] # undirected Graph 
+graph = [[] for i in range(v)]
 e = int(input("Enter the number of edges: ")) 
 print("Enter the edges along with  weights:") 
 for i in range(e): 
