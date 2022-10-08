@@ -89,14 +89,12 @@ def astar(world, start, goal):
 
 if __name__ == "__main__":
     world = Gridworld()
-    #   stat position and Goal
     start = Cell()
     start.position = (0, 0)
     goal = Cell()
     goal.position = (4, 4)
     print(f"path from {start.position} to {goal.position}")
     s = astar(world, start, goal)
-    #   Just for visual reasons
     for i in s:
         world.w[i] = 1
     print(world.w)
